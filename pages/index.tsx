@@ -1,15 +1,9 @@
-import Head from 'next/head';
+import SEO from '../components/SEO';
 
 export default function Home(): JSX.Element {
   return (
-    <div>
-      <Head>
-        <title>Next.js Template</title>
-      </Head>
-
-      <main>
-        <h1>Next.js Template</h1>
-      </main>
-    </div>
+    <SEO title="CHANGE ME" description="CHANGE ME">
+      <h1>CHANGE ME</h1>
+    </SEO>
   );
 }
