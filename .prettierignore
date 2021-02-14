@@ -9,3 +9,4 @@ tsconfig.json
 next-env.d.ts
 package.json
 .eslintrc
+.husky/
