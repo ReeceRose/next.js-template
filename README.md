@@ -1,3 +1,11 @@
 # Next.js Template
 
-More information coming soon
+*Next.js template with TypeScript, ESLint, Prettier, and TailwindCSS already configured*
+
+## Purpose
+
+## Technology
+
+## Setup
+
+## Issues
