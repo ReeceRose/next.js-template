@@ -32,5 +32,6 @@
     "react/prop-types": "off",
     "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
+    "@typescript-eslint/no-inferrable-types": "off" 
   }
 }
