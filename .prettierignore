@@ -11,3 +11,5 @@ package.json
 .eslintrc
 .husky/
 .github/
+.jest/
+jest.config.js
