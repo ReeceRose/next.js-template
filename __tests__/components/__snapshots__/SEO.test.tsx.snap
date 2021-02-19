@@ -38,11 +38,11 @@ exports[`SEO component matches snapshot 1`] = `
     property="og:type"
   />
   <meta
-    content="undefined/images/next-js.png"
+    content="http://localhost:3000/images/logo.png"
     property="og:image"
   />
   <meta
-    content="undefined/images/next-js.png"
+    content="http://localhost:3000/images/logo.png"
     name="twitter:image"
   />
   <link

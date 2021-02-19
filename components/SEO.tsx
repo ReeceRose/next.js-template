@@ -22,8 +22,8 @@ const SEO: React.FC<Props> = ({ title, description }) => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="og:type" content="website" />
 
-      <meta property="og:image" content={`${siteURL}/images/next-js.png`} />
-      <meta name="twitter:image" content={`${siteURL}/images/next-js.png`} />
+      <meta property="og:image" content={`${siteURL}/images/logo.png`} />
+      <meta name="twitter:image" content={`${siteURL}/images/logo.png`} />
 
       <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       <link rel="icon" sizes="32x32" href="/favicon-32x32.png" />
