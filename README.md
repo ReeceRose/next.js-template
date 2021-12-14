@@ -96,6 +96,21 @@ To run locally (or on a server after pulling from repository), run:
 docker run -p 3000:3000 next.js-template
 ```
 
+## Usage in monorepo
+
+Currently, if this is cloned into a monorepo the build won't run. In addition to the build not running, husky does not work properly. To get a successful build, follow these instructions
+
+- Move .github/ folder to root of monorepo
+- Add the following to the `packages.json` file in this folder: `"prepare": "cd ../ && husky install web/.husky"`
+- Replace the contents of `./husky/pre-commit` with the following:
+
+```bash
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+cd web
+echo "[Husky] pre-commit" && yarn pre-commit
+``` 
+
 ## Issues
 
 Have any issue or suggestion? Feel free to open an issue [here](https://github.com/ReeceRose/next.js-template/issues/new)
