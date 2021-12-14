@@ -18,7 +18,7 @@ const SEO: React.FC<Props> = ({ title, description }) => {
       <meta name="twitter:description" content={description} />
       <meta name="og:description" content={description} />
 
-      <meta name="twitter:creator" content="@CHANGE ME" />
+      <meta name="twitter:creator" content="@CHANGE_ME" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="og:type" content="website" />
 

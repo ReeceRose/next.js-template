@@ -55,7 +55,7 @@ yarn install
 Now, we can do the little configuration required
 
  - In packages.json, replace 'nextjs-template' with your projects name
- - In your IDE/text editor, search for 'CHANGE ME' and update/remove it accordingly
+ - In your IDE/text editor, search for 'CHANGE_ME' and update/remove it accordingly
  - Copy .env.example to .env.local and set 'SITE_URL' equal to 'http://localhost:3000' for development 
 
  *Note, there are a lot of images under the public folder that will eventually need to be replaced (currently all Next.js logos). These files are used for metadata and SEO, so they should all be individually replaced and not just deleted*
