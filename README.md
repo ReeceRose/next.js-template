@@ -96,9 +96,9 @@ To run locally (or on a server after pulling from repository), run:
 docker run -p 3000:3000 next.js-template
 ```
 
-## Usage in monorepo
+## Usage in monorepo as a nested folder
 
-Currently, if this is cloned into a monorepo the build won't run. In addition to the build not running, husky does not work properly. To get a successful build, follow these instructions
+Currently, if this is cloned into a monorepo as a nested folder (example: web/) the build won't run. In addition to the build not running, husky does not work properly. To get a successful build, follow these instructions
 
 - Move .github/ folder to root of monorepo
 - Add the following to the `packages.json` file in this folder: `"prepare": "cd ../ && husky install web/.husky"`
