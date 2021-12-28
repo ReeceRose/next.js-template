@@ -29,7 +29,7 @@ I plan on keeping this repository up-to-date with the latest releases from the l
 ### Prerequisites
 
  - [Git](https://git-scm.com/downloads)
- - [Node.js](https://nodejs.org/en/) (Currently tested with 15.8.0, but previous versions will likely work)
+ - [Node.js](https://nodejs.org/en/) (Currently tested with 16.13.0, but future/previous versions will likely work)
  - [yarn](https://classic.yarnpkg.com/en/docs/install/) (NPM will work, but I prefer yarn)
 
 ### Install
@@ -54,7 +54,6 @@ yarn install
 
 Now, we can do the little configuration required
 
- - In packages.json, replace 'nextjs-template' with your projects name
  - In your IDE/text editor, search for 'CHANGE_ME' and update/remove it accordingly
  - Copy .env.example to .env.local and set 'SITE_URL' equal to 'http://localhost:3000' for development 
 
@@ -70,7 +69,7 @@ yarn dev
 
 ### Test
 
-To ensure everything is working as expected, you can run unit tests. These will also be executed via Github Actions.
+To ensure everything is working as expected, you can run unit tests. These will also be executed via GitHub Actions.
 
 To run the tests, run:
 ```bash
@@ -101,7 +100,7 @@ docker run -p 3000:3000 next.js-template
 Currently, if this is cloned into a monorepo as a nested folder (example: web/) the build won't run. In addition to the build not running, husky does not work properly. To get a successful build, follow these instructions
 
 - Move .github/ folder to root of monorepo
-- Add the following to the `packages.json` file in this folder: `"prepare": "cd ../ && husky install web/.husky"`
+- Add the following to the `packages.json` file in this folder: `"prepare": "cd ../ && husky install web/.husky"` while removing the `"postinstall": "husky install"` line
 - Replace the contents of `./husky/pre-commit` with the following:
 
 ```bash
