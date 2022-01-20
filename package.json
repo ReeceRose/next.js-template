@@ -10,7 +10,7 @@
     "lint": "eslint --ext .ts,.tsx .",
     "type-check": "tsc --project tsconfig.json --noEmit",
     "test": "jest",
-    "test:build": "jest -u",
+    "test:write": "jest -u",
     "test:watch": "jest --watch",
     "pre-commit": "yarn format && yarn lint && yarn type-check && yarn test",
     "postinstall": "husky install"
