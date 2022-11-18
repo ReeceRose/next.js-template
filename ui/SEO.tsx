@@ -1,11 +1,8 @@
 import Head from 'next/head';
 
-type Props = {
-  title: string;
-  description: string;
-};
+import { SEOProps } from '@/lib/props';
 
-const SEO: React.FC<Props> = ({ title, description }) => {
+export default function SEO({ title, description }: SEOProps) {
   const siteURL = process.env.SITE_URL;
 
   return (
@@ -72,6 +69,4 @@ const SEO: React.FC<Props> = ({ title, description }) => {
       />
     </Head>
   );
-};
-
-export default SEO;
+}
