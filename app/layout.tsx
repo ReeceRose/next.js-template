@@ -1,5 +1,7 @@
 import '@/styles/dist.css';
 
+import React from 'react';
+
 import SEO from '@/ui/SEO';
 
 export default function RootLayout({

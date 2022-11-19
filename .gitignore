@@ -34,4 +34,10 @@ yarn-error.log*
 # vercel
 .vercel
 
-tsconfig.tsbuildinfo
+# typescript
+*.tsbuildinfo
+
+# tailwind
+.turbo
+.vscode
+styles/dist.css
