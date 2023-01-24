@@ -1,10 +1,12 @@
+import Head from 'next/head';
+
 import { SEOProps } from '@/lib/props';
 
 export default function SEO({ title, description }: SEOProps) {
   const siteURL = process.env.SITE_URL;
 
   return (
-    <head>
+    <Head>
       <title>{title}</title>
       <meta property="og:title" content={title} />
       <meta name="twitter:title" content={title} />
@@ -65,6 +67,6 @@ export default function SEO({ title, description }: SEOProps) {
         sizes="180x180"
         href="/images//apple-touch-icon-180x180.png"
       />
-    </head>
+    </Head>
   );
 }
